@@ -22,8 +22,8 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box">
-                        <span class="info-box-icon bg-warning elevation-1"><i class="fab fa-js-square"></i></span>
-                        <div class="info-box-content">Javascript</span>
+                        <span class="info-box-icon bg-warning elevation-1"><i class="fab fa-js"></i></span>
+                        <div class="info-box-content">JavaScript</span>
                             <span class="info-box-number">
                                 10
                             </span>
@@ -52,11 +52,11 @@
 
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box mb-3">
-                        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="info-box-icon bg-info elevation-1"><i class="fab fa-html5"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Sales</span>
-                            <span class="info-box-number">760</span>
+                            <span class="info-box-text">HTML</span>
+                            <span class="info-box-number">7</span>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
@@ -65,11 +65,11 @@
                 <!-- /.col -->
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box mb-3">
-                        <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-users"></i></span>
+                        <span class="info-box-icon bg-primary elevation-1"><i class="fab fa-css3-alt"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">New Members</span>
-                            <span class="info-box-number">2,000</span>
+                            <span class="info-box-text">CSS</span>
+                            <span class="info-box-number">5</span>
                         </div>
                         <!-- /.info-box-content -->
                     </div>

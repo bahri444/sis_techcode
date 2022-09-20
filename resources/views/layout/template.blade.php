@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="{{ asset('assets') }}/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('assets') }}/dist/css/adminlte.min.css">
+
+    <!-- data table -->
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- end-datatable -->
 </head>
 
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -84,7 +90,7 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('dashboard')}}" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -92,7 +98,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('member')}}" class="nav-link">
                                 <i class="nav-icon fas fa-light fa-users"></i>
                                 <p>
                                     Member
@@ -100,7 +106,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('user')}}" class="nav-link">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Users
@@ -108,7 +114,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('kegiatan')}}" class="nav-link">
                                 <i class="nav-icon fas fa-chart-line"></i>
                                 <p>
                                     Kegiatan
@@ -116,7 +122,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('fasilitas')}}" class="nav-link">
                                 <i class="nav-icon fas fa-universal-access"></i>
                                 <p>
                                     Fasilitas
@@ -124,7 +130,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('keuangan')}}" class="nav-link">
                                 <i class="nav-icon fas fa-dollar-sign"></i>
                                 <p>
                                     Keuangan
@@ -132,7 +138,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('belanja')}}" class="nav-link">
                                 <i class="nav-icon fas fa-receipt"></i>
                                 <p>
                                     Histori Belanja
@@ -140,7 +146,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('administrasi')}}" class="nav-link">
                                 <i class="nav-icon fas fa-envelope"></i>
                                 <p>
                                     Administrasi
@@ -148,7 +154,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('history')}}" class="nav-link">
                                 <i class="nav-icon fas fa-history"></i>
                                 <p>
                                     Histori Kegiatan
@@ -156,7 +162,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('moduls')}}" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Moduls
@@ -164,7 +170,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('absensi')}}" class="nav-link">
                                 <i class="nav-icon fas fa-file-contract"></i>
                                 <p>
                                     Absensi
@@ -172,7 +178,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('logout')}}" class="nav-link">
                                 <i class="nav-icon fas fa-sign-out-alt"></i>
                                 <p>
                                     Keluar
@@ -223,6 +229,40 @@
     <script src="{{ asset('assets') }}/dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset('assets') }}/dist/js/pages/dashboard2.js"></script>
+
+    <!-- DataTables  & Plugins -->
+    <script src="{{ asset('assets') }}/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/jszip/jszip.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <!-- Page specific script -->
+    <script>
+        $(function() {
+            $("#example1").DataTable({
+                "responsive": true,
+                "lengthChange": false,
+                "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
     @yield('script')
 </body>
 
