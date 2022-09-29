@@ -13,36 +13,104 @@
             </div>
             <div class="modal-body">
                 <div class="card-body">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="exampleInputFile">
-                                <label class="custom-file-label" for="exampleInputFile">Pilih File</label>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="nim">NIM</label>
+                                <input type="text" name="nim" class="form-control" placeholder="nim">
                             </div>
-                            <div class="input-group-append">
-                                <span class="input-group-text">Upload</span>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" name="nama" class="form-control" placeholder="nama">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="tgl_lahir">Tgl Lahir</label>
+                                <input type="date" name="tgl_lahir" class="form-control" placeholder="nama">
                             </div>
                         </div>
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="exampleInputFile">Foto</label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="file" name="fas_foto" class="custom-file-input" id="exampleInputFile">
+                                        <label class="custom-file-label" for="fas_foto">fas foto 4 x 6</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <div>
+                                    <label for="kelamin">Kelamin</label>
+                                </div>
+                                <div class="icheck-primary d-inline mr-2">
+                                    <input type="radio" id="radioPrimary1" name="kelamin" value="laki-laki">
+                                    <label for="radioPrimary1" class="ml-2">Laki-Laki</label>
+                                </div>
+                                <div class="icheck-primary d-inline ml-2">
+                                    <input type="radio" id="radioPrimary2" name="kelamin" value="perempuan">
+                                    <label for="radioPrimary1" class="ml-2">Perempuan</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="alamat">Alamat</label>
+                                <input type="text" name="alamat" class="form-control" placeholder="alamat">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="tlp">Telepon</label>
+                                <input type="text" name="tlp" class="form-control" placeholder="nomor telepon">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" class="form-control" placeholder="example@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="github">Github</label>
+                                <input type="text" name="github" class="form-control" placeholder="username github">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="prodi">Program Studi</label>
+                                <select name="prodi" class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">-- pilih prodi --</option>
+                                    <option value="Teknik Informatik">Teknik Informatika</option>
+                                    <option value="Sistem Informasi">Sistem Informasi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="angkatan">Angkatan</label>
+                                <input type="number" name="angkatan" class="form-control" placeholder="angkatan dalam bentuk angka">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- /.card-body -->
             </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-info">Save changes</button>
+                <button type="button" class="btn btn-info">Save</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -63,36 +131,104 @@
             </div>
             <div class="modal-body">
                 <div class="card-body">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="exampleInputFile">
-                                <label class="custom-file-label" for="exampleInputFile">Pilih File</label>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="nim">NIM</label>
+                                <input type="text" name="nim" class="form-control" placeholder="nim">
                             </div>
-                            <div class="input-group-append">
-                                <span class="input-group-text">Upload</span>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" name="nama" class="form-control" placeholder="nama">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="tgl_lahir">Tgl Lahir</label>
+                                <input type="date" name="tgl_lahir" class="form-control" placeholder="nama">
                             </div>
                         </div>
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="exampleInputFile">Foto</label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="file" name="fas_foto" class="custom-file-input" id="exampleInputFile">
+                                        <label class="custom-file-label" for="fas_foto">fas foto 4 x 6</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <div>
+                                    <label for="kelamin">Kelamin</label>
+                                </div>
+                                <div class="icheck-primary d-inline mr-2">
+                                    <input type="radio" id="radioPrimary1" name="kelamin" value="laki-laki">
+                                    <label for="radioPrimary1" class="ml-2">Laki-Laki</label>
+                                </div>
+                                <div class="icheck-primary d-inline ml-2">
+                                    <input type="radio" id="radioPrimary2" name="kelamin" value="perempuan">
+                                    <label for="radioPrimary1" class="ml-2">Perempuan</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="alamat">Alamat</label>
+                                <input type="text" name="alamat" class="form-control" placeholder="alamat">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="tlp">Telepon</label>
+                                <input type="text" name="tlp" class="form-control" placeholder="nomor telepon">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" class="form-control" placeholder="example@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="github">Github</label>
+                                <input type="text" name="github" class="form-control" placeholder="username github">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="prodi">Program Studi</label>
+                                <select name="prodi" class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">-- pilih prodi --</option>
+                                    <option value="Teknik Informatik">Teknik Informatika</option>
+                                    <option value="Sistem Informasi">Sistem Informasi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="angkatan">Angkatan</label>
+                                <input type="number" name="angkatan" class="form-control" placeholder="angkatan dalam bentuk angka">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- /.card-body -->
             </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-info">Save changes</button>
+                <button type="button" class="btn btn-info">Save</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -106,7 +242,7 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Hapus Data Member</h4>
+                <h4 class="modal-title">Hapus Data</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -150,42 +286,63 @@
                             <!-- end-modal add-data -->
                         </div>
                         <!-- /.card-header -->
-                        <div class="card-body">
-                            <table id="example1" class="table table-bordered table-striped">
-                                <thead class="text-center">
-                                    <tr>
-                                        <th>Rendering engine</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th>Engine version</th>
-                                        <th>CSS grade</th>
-                                        <th>Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="text-center">
-                                    <tr>
-                                        <td>Trident</td>
-                                        <td>Internet
-                                            Explorer 4.0
-                                        </td>
-                                        <td>Win 95+</td>
-                                        <td> 4</td>
-                                        <td>X</td>
-                                        <td>
-                                            <!-- modal add-data -->
-                                            <button type="button" class="btn btn-info mr-1" data-toggle="modal" data-target="#modalEdit">
-                                                <i class="far fa-edit"></i>
-                                            </button>
-                                            <!-- end-modal add-data -->
-                                            <!-- modal hapus data -->
-                                            <button type="button" class="btn btn-danger ml-1" data-toggle="modal" data-target="#modalHapus">
-                                                <i class="far fa-trash-alt"></i>
-                                            </button>
-                                            <!-- end-modal hapus data -->
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="table-responsive">
+                            <div class="card-body">
+                                <table id="example1" class="table table-bordered table-striped">
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th>No</th>
+                                            <th>NIM</th>
+                                            <th>Nama</th>
+                                            <th>Kelamin</th>
+                                            <th>Tgl Lahir</th>
+                                            <th>Foto</th>
+                                            <th>Alamat</th>
+                                            <th>Telepon</th>
+                                            <th>Email</th>
+                                            <th>Github</th>
+                                            <th>Program Studi</th>
+                                            <th>Angkatan</th>
+                                            <th>Status Anggota</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Trident</td>
+                                            <td>Explorer 4.0</td>
+                                            <td>Win 95+</td>
+                                            <td> 4</td>
+                                            <td>X</td>
+                                            <td>Win 95+</td>
+                                            <td> 4</td>
+                                            <td>X</td>
+                                            <td>Win 95+</td>
+                                            <td> 4</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                            <td>
+                                                <!-- modal add-data -->
+                                                <button type="button" class="btn btn-warning mr-1" data-toggle="modal" data-target="#modalEdit">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                                <!-- end-modal add-data -->
+                                                <!-- modal add-data -->
+                                                <button type="button" class="btn btn-info mr-1" data-toggle="modal" data-target="#modalEdit">
+                                                    <i class="far fa-edit"></i>
+                                                </button>
+                                                <!-- end-modal add-data -->
+                                                <!-- modal hapus data -->
+                                                <button type="button" class="btn btn-danger ml-1" data-toggle="modal" data-target="#modalHapus">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </button>
+                                                <!-- end-modal hapus data -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <!-- /.card-body -->
                     </div>

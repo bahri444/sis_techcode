@@ -1,11 +1,15 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FasilitasController;
+use App\Http\Controllers\Home;
 use Illuminate\Support\Facades\Route;
 
 // import controller agar controller bisa di deteksi oleh view
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\KeuanganController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +26,25 @@ use App\Http\Controllers\UserController;
 //     // return view('welcome');
 //     return view('admin.dashboard');
 // });
+
+// Route::get('/login', function () {
+//     return view('login');
+// });
+// Route::get('/register', function () {
+//     return view('register');
+// });
+// Route::get('/home/tentang', function () {
+//     return view('home.tentang');
+// });
+// Route::get('/home/biografi', function () {
+//     return view('home.biografi');
+// });
+// Route::get('/home/index', function () {
+//     return view('home.index');
+// });
+
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-Route::get('/logout', [UserController::class, 'logout'])->name('logout');
-// Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/logout', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/admin/member', [MemberController::class, 'index'])->name('member');
 Route::get('/admin/user', [UserController::class, 'index'])->name('user');
